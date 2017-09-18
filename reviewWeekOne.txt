@@ -1,0 +1,125 @@
+Primative types:
+Be Careful! Bears Shouldn't Ingest Large Fluffy Dogs
+Can not store null values
+
+Variable names:
+
+Variable names are case sensitive! 
+Variables can only start with a letter, the underscore character _, or a dollar sign $. 
+This means that a variable may not start with a number or any other special character.
+Subsequent characters in the variable name can be any combination of letters, numbers, dollar signs, or underscores
+
+lowerCamelCase for Variables
+UpperCamelCase for classes
+Final variables not super important now
+
+
+Method Signatures:
+   (optional)       (optional)       (required)   (required)  (optional)
+(access modifier) (static keyword) (return type) (method Name) (parameter list) {
+
+
+   
+(return keyword - this needs to be present if the return type is anything other that void)
+}
+
+
+Loops:
+Same basic syntax as JS
+if, else/if, else, while, for
+
+
+Classes:
+
+Constructors make instances of objects
+No argument constructor is provided by default
+Once a constructor other than the no argument constructor is declared Java "takes away" the no argument constructor
+
+
+Encapsulation:
+
+Variables marked as private access can no longer be accessed or modified using .fieldName -> example = rubberDuckie.name
+
+They must be accessed through a get or set method
+
+
+Method Overriding
+1. return types must be compatible
+2. can give more access but not less
+
+
+
+Method Overloading = 2 methods with the same name
+1. return types can be different
+2. have to change more than just return type
+3. access can be more or less
+generally just change the number of arguments
+
+
+
+Static vs Non Static:
+Static = Math.add()
+Non Static = rubberDuckie.swim()
+
+difference in the way they are called
+
+design difference if you don't need an object for the method 
+to do its job it should probably be static
+
+
+
+Access Modifiers:
+Visible to the package, the default. No modifiers are needed.
+(private) Visible to the class only.
+(public) Visible to the world.
+(protected) Visible to the package and all subclasses.
+
+
+
+Exceptions:
+Named for an "Exceptional Event"
+Java is like I literally have no idea what to do?
+
+Try Catch block
+try {
+    try this stuff
+                                      
+    if stuff goes wrong Do that stuff 
+}
+catch (BlargException thingsAreOnFire) {
+    in case of emergency do this stuff
+}
+
+
+
+Arrays:
+Syntax for making them two options:
+
+If you don't know the values you want to store
+(type)[] (variable name) = (new keyword) (type)[(number of indexes)]
+String[] superDuperArray = new String[3];
+
+If you already know what you want to store
+(type)[] (variable name) = {(value1), (value2), etc ... };
+String[] superDuperArray = {"Mike", "is", "awesome"};
+
+Can't change size once they are set
+
+Access them with this syntax:
+myAwesomeArray[0]
+syntax is pretty much same as JS
+
+
+toString:
+
+Override annotation
+toString lives in the Object class
+
+
+By over riding you no longer get the address of the object the toString is being called on
+But instead get a nice pretty representation that you decide upon
+
+Example:
+instead of -> com.theironyard.novauc.Duck@610455d6
+
+you get -> I am a duck my name is Howard!
